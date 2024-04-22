@@ -1,13 +1,10 @@
 # INSPIRE
+<a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 
-This repo is used for code review of INSPIRE
-
-## Architecuture
-Overview of INSPIRE. We leverage our proposed schemes (INSPIRE) — namely, ISE, ISA, and SSBA, for FPN to achieve powerful multi-scale representation for dense prediction tasks.
+## Abstract
+Hierarchical neural networks are essential for multi-scale representation in medical imaging, facilitating tasks like object detection and segmentation. Yet, their performance is dampened by intra-scale information loss and inter-scale feature misalignment. To address these challenges, We propose an INtegrated-Scale Pyramidal Interactive Reconfiguration to Enhance feature learning (INSPIRE). This approach is designed to enrich intra-scale semantic enhancement, ensure precise inter-scale spatial alignment, and is coupled with spatial-semantic back augmentation. Our method outshines standard baselines in diverse medical segmentation challenges, notably in identifying brain tumors, stroke lesions, and polyps. We validate the generalizability of INSPIRE by extending it to object detection and semantic segmentation in natural images. INSPIRE boosts semantic clarity, aligns multi-scale features, and achieves integrated spatial-semantic coherence. It seamlessly meshes with widely employed hierarchical neural networks in medical image analysis, such as U-Net and FPN, promising to enhance computer-aided diagnostics and clinical interventions. 
 
 ![Architecuture](figs/arch.png)
-
-## Results
 
 ## Installation
 This implementation is built on the[mmdetection](https://github.com/open-mmlab/mmdetection). Please follow the guildlines of [mmdetection](https://github.com/open-mmlab/mmdetection) to install.
